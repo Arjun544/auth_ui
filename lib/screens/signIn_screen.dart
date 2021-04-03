@@ -86,7 +86,9 @@ class _SignInScreenState extends State<SignInScreen> {
                     Text(
                       "Don't have an account?",
                       style: TextStyle(
-                          color: Colors.grey, fontWeight: FontWeight.w600),
+                          fontSize: getProportionateScreenHeight(16),
+                          color: Colors.grey,
+                          fontWeight: FontWeight.w600),
                     ),
                     SizedBox(width: getProportionateScreenWidth(5)),
                     GestureDetector(
@@ -99,7 +101,9 @@ class _SignInScreenState extends State<SignInScreen> {
                       child: Text(
                         "SignUp",
                         style: TextStyle(
-                            color: kPrimaryColor, fontWeight: FontWeight.w600),
+                            fontSize: getProportionateScreenHeight(16),
+                            color: kPrimaryColor,
+                            fontWeight: FontWeight.w600),
                       ),
                     ),
                   ],

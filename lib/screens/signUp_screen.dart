@@ -82,7 +82,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   Text(
                     'By continuing your confirm that you agree \nwith our Term and Condition',
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.caption,
+                    style: TextStyle(
+                        fontSize: getProportionateScreenHeight(14),
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w600),
                   ),
                   SizedBox(height: 20),
                   DefaultButton(
@@ -101,7 +104,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       Text(
                         "Already have an account?",
                         style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.w600),
+                            fontSize: getProportionateScreenHeight(16),
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w600),
                       ),
                       SizedBox(width: getProportionateScreenWidth(5)),
                       GestureDetector(
@@ -111,6 +116,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           "SignIn",
                           style: TextStyle(
+                              fontSize: getProportionateScreenHeight(16),
                               color: kPrimaryColor,
                               fontWeight: FontWeight.w600),
                         ),
