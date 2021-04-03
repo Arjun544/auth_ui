@@ -140,9 +140,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
         onChanged: (value) {},
         decoration: InputDecoration(
           border: InputBorder.none,
-          hintText: "Enter your phone number",
-          // If  you are using latest version of flutter then lable text and hint text shown like this
-          // if you r using flutter less then 1.20.* then maybe this is not working properly
+          hintText: "202-555-0915",
+          hintStyle:
+              TextStyle(color: Colors.black54, fontWeight: FontWeight.w500),
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Icon(Icons.phone),
         ),
@@ -169,8 +169,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: "Re-enter your password",
-          // If  you are using latest version of flutter then lable text and hint text shown like this
-          // if you r using flutter less then 1.20.* then maybe this is not working properly
+          hintStyle:
+              TextStyle(color: Colors.black54, fontWeight: FontWeight.w500),
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Icon(Icons.lock_rounded),
         ),
@@ -193,8 +193,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: "Enter your password",
-          // If  you are using latest version of flutter then lable text and hint text shown like this
-          // if you r using flutter less then 1.20.* then maybe this is not working properly
+          hintStyle:
+              TextStyle(color: Colors.black54, fontWeight: FontWeight.w500),
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Icon(Icons.lock_rounded),
         ),
@@ -213,19 +213,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
       ),
       child: TextField(
         keyboardType: TextInputType.emailAddress,
-        onChanged: (value) {
-          if (value.isNotEmpty) {
-            removeError(error: kEmailNullError);
-          } else if (emailValidatorRegExp.hasMatch(value)) {
-            removeError(error: kInvalidEmailError);
-          }
-          return null;
-        },
+        onChanged: (value) {},
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: "Enter your email",
-          // If  you are using latest version of flutter then lable text and hint text shown like this
-          // if you r using flutter less then 1.20.* then maybe this is not working properly
+          hintStyle:
+              TextStyle(color: Colors.black54, fontWeight: FontWeight.w500),
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Icon(Icons.email_rounded),
         ),

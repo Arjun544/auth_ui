@@ -52,7 +52,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 Text(
-                  "Sign in with your email and password  \nor continue with social media",
+                  "Sign in with your number",
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: getProportionateScreenWidth(15),
@@ -118,7 +118,7 @@ class _SignInScreenState extends State<SignInScreen> {
       alignment: Alignment.center,
       padding: const EdgeInsets.only(left: 20, top: 5),
       decoration: BoxDecoration(
-        color: Colors.grey.withOpacity(0.3),
+        color: Colors.grey.withOpacity(0.2),
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextField(
@@ -127,9 +127,9 @@ class _SignInScreenState extends State<SignInScreen> {
         style: TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
         decoration: InputDecoration(
           border: InputBorder.none,
-          hintText: "Enter your phone number",
+          hintText: "202-555-0915",
           hintStyle:
-              TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
+              TextStyle(color: Colors.black54, fontWeight: FontWeight.w500),
           // If  you are using latest version of flutter then lable text and hint text shown like this
           // if you r using flutter less then 1.20.* then maybe this is not working properly
           floatingLabelBehavior: FloatingLabelBehavior.always,
